@@ -6,83 +6,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Sofia Khantaeva, web-developer, cv">
     <meta name="description" content="This is personal page about me">
+    <link rel="stylesheet" href="style.css">
     <title>Sofia Khantaeva CV</title>
 </head>
 <body>
-    <img src="/IMG_20190927_194453.jpg" alt="Sofia Khantaeva" width="200">
-    <h1>Sofia Khantaeva</h1>
-    <hr color="blue" width="500">
-    <br>
-    <p>I'm <strong>junior web-developer</strong> and <strong>engineer  electronics and nanoelectronics</strong></p>
-    <!-- <br> -->
-    <p>I love <em>snowboarding, travelling and cooking</em></p>
 
-    <h2>List this my social webs:</h2>
+    <div class="container">
+        <div class="info">
+            <img src="/IMG_20190927_194453.jpg" alt="Sofia Khantaeva" class="avatar">
+            
+            
 
-    <a href="https://t.me/SofikHant" target="_blank">Telegram</a>
-    |
-    <a href="https://vk.com/id46055466" target="_blank">VK</a>
-    |
-    <a href="https://www.facebook.com/profile.php?id=100001738557578" target="_blank">Facebook</a>
+            <div class="info-text">
+                <h1>Sofia Khantaeva</h1>
 
-    <h2>My hobbies</h2>
-    <ol>
-        <li>Sport</li>
-        <li>Snowboarding</li>
-        <li>travelling</li>
-        <li>Work in garden</li>
-    </ol>
-
-    <h2>Job experience</h2>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Name of company</th>
-                <th>Position in company</th>
-                <th>Year</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Rosneft</td>
-                <td>General worker</td>
-                <td>2018 - 2019</td>
-            </tr>
-            <tr>
-                <td>Museum of chocolate</td>
-                <td>Guide</td>
-                <td>2019 - 2020</td>
-            </tr>
-            <tr>
-                <td>Sushi - Market</td>
-                <td>Deliver</td>
-                <td>2020 - 2020</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h2>Contact with me</h2>
-
-    <form action="/">
-        <div>
-            <label for="name">Your full name:</label>
-            <input type="text" placeholder="Input your name" id="name">
-        </div>
-        
-        <div>
-            <label for="e-mail">Your E-mail:</label>
-            <input type="email" placeholder="Input your E-mail" id="e-mail">
-        </div>
-        
-        <div>
-            <label for="message">Your message:</label>
-            <br>
-            <textarea id="message" placeholder="Input message..." cols="20" rows="5"></textarea>
+                <p>I'm <strong>junior web-developer</strong> and <strong>engineer  electronics and nanoelectronics</strong></p>
+                <!-- <br> -->
+                <p>I love <em>snowboarding, travelling and cooking</em></p>
+    
+                <h2>List this my social webs:</h2>
+    
+                <a href="https://t.me/SofikHant" target="_blank">Telegram</a>
+                |
+                <a href="https://vk.com/id46055466" target="_blank">VK</a>
+                |
+                <a href="https://www.facebook.com/profile.php?id=100001738557578" target="_blank">Facebook</a>
+    
+            </div>
+            
         </div>
     
-        <button type="submit">Send!</button>
-    </form>
+    
+        <div class="card hobbies">
+            <h2>My hobbies:</h2>
+            <ol class="list">
+                <li>Sport</li>
+                <li>Snowboarding</li>
+                <li>travelling</li>
+                <li>Work in garden</li>
+            </ol>
+        </div>
+        
+        <div class="card experience">
+            <h2>Job experience</h2>
+    
+            <table class="table">
+                <!-- <thead>
+                    <tr>
+                        <th>Name of company</th>
+                        <th>Position in company</th>
+                        <th>Year</th>
+                    </tr>
+                </thead> -->
+                <tbody>
+                    <tr>
+                        <td>Rosneft</td>
+                        <td>General worker</td>
+                        <td>2018 - 2019</td>
+                    </tr>
+                    <tr>
+                        <td>Museum of chocolate</td>
+                        <td>Guide</td>
+                        <td>2019 - 2020</td>
+                    </tr>
+                    <tr>
+                        <td>Sushi - Market</td>
+                        <td>Deliver</td>
+                        <td>2020 - 2020</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="card contact">
+            <h2>Contact with me</h2>
+    
+            <form action="/">
+                <div class="contact-row">
+                    <div class="contact-form">
+                        <label for="name">Your full name:</label>
+                        <input type="text" placeholder="Input your name" id="name">
+                    </div>
+                    
+                    <div class="contact-form">
+                        <label for="e-mail">Your E-mail:</label>
+                        <input type="email" placeholder="Input your E-mail" id="e-mail">
+                    </div>
+                </div>
+                
+                
+                <div class="contact-form">
+                    <label for="message">Your message:</label>
+                    <textarea id="message" placeholder="Input message..." cols="20" rows="5"></textarea>
+                </div>
+            
+                <button class="btn contact-form" type="submit">Send!</button>
+            </form>
+        </div>
+    </div>
+
+    
     
 </body>
 </html>
